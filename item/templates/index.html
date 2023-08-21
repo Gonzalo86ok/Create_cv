@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+    <h1><strong>Create your resume</strong></h1>
+    <hr>
+    <h2>Personal dateils</h2>
+    <div class="container personal">   
+        <form action="create.html" method="post">
+            <p><label for="name"> Name: <input type="text" id="name"> </label> </p>
+            <p><label for="surname"> Surname: <input type="text" id="surname"> </label></p>
+            <p><label for="phone"> Phone: <input type="text" id="phone"> </label></p>
+            <p><label for="email"> Email: <input type="email" id="email"> </label></p>
+            <p><label for="country"> Country: <select id="country">
+                <option>Add country</option>
+                <option>Argentina</option>
+                <option>Australia</option>
+                <option>Brazil</option>
+                <option>Canada</option>
+                <option>China</option>
+                <option>France</option>
+                <option>United States</option>
+            </select></label></p>
+            <p><label for="city"> City: <input type="text" id="city"> </label></p>
+            <p><label for="adress"> Adress: <input type="text" id="adress"> </label></p>
+            <button type="submit">Create</button>
+            <button type="submit">Add</button>
+        </form>  
+    </div>
+    <div class="container preview">
+          
+    </div>
+</body>
+</html>
